@@ -66,7 +66,7 @@ The final output of the cleanup is for two tidy data files, obtained through `ru
 
 #### File One
 
-File name: `tidy_UCI_HAR_Dataset.csv`
+File name: `tidy_UCI_HAR_Dataset.txt`
 
 The first file cleans the data, retaining only the following:
 1. activity
@@ -118,7 +118,7 @@ Other alterations made:
 
 #### File Two
 
-File name: `tidy_summary_UCI_HAR_Dataset.csv`
+File name: `tidy_summary_UCI_HAR_Dataset.txt`
 
 The second dataset is simply an aggregation of the first, with means of all features, grouped by the combination of subject and activity. That is, these are the means of every mean and standard deviation value of every feature for every subject performing a specific activity. it may be easier to imagine this given the dimensionality of the dataset: `180 x 68`. There are `30 subjects * 6 activities` rows (`180`), `66` feature columns, and `2` columns for identifying the subject and the activity, respectively.
 

@@ -52,15 +52,15 @@ Acc         | Acceleration
 Gyro        | Velocity        
 Mag         | Magnitude       
 
-The output of this script is `tidy_UCI_HAR_Dataset.csv`.
+The output of this script is `tidy_UCI_HAR_Dataset.txt`.
 
-Additionally, a second summarizing dataset is produced, `tidy_summary_UCI_HAR_Dataset.csv`. This gives the mean of each variable, grouped by subject and activity. The naming convention simply adds `mean` in front of the variable names and maintains lowerCamelCase.
+Additionally, a second summarizing dataset is produced, `tidy_summary_UCI_HAR_Dataset.txt`. This gives the mean of each variable, grouped by subject and activity. The naming convention simply adds `mean` in front of the variable names and maintains lowerCamelCase.
 
 ## run_analysis_v2.R
 
 Additional changes beyond the scope of the project are made in `run_analysis_v2.R`. This script performs the operations of `run_analysis.R`, but additionally retains the 128 time values per feature which were used to calculate the mean and standard deviation variables. The variable names are based on the file names with time components labeled in `Time000` format at the end of each variable name. The cleanup of these is done in the same convention as the feature names, described above. As this is beyond the scope fo the cleaning project, details of thsi dataset are not included in the codebook.
 
-The output of this script is `./data/tidy_UCI_HAR_Dataset_v2.csv`. For space saving reasons, the `data` sub-directory and this file are nto included int he repo.
+The output of this script is `./data/tidy_UCI_HAR_Dataset_v2.csv`. For space saving reasons, the `data` sub-directory and this file are nto included in the repo.
 
 This also produces a summarizing dataset, `./data/tidy_summary_UCI_HAR_Dataset_v2.csv`, as with the other script. The naming convention is the same.
 

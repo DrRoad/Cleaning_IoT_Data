@@ -95,8 +95,9 @@ colnames(bound[[1]]) <- "subjectId"
 # combine into single table -----------------------------------------------
 
 dt <- cbind(bound[[3]], bound[[1]], bound[[2]])
-# write the csv
-fwrite(dt, file = "tidy_UCI_HAR_Dataset.csv")
+# write the csv (write.table for submission requirements)
+# fwrite(dt, file = "tidy_UCI_HAR_Dataset.csv")
+write.table(dt, file = "tidy_UCI_HAR_Dataset.txt", row.names = F)
 
 # mean by subject and activity --------------------------------------------
 
@@ -110,5 +111,6 @@ renameMeanUpper <- function(s){
   paste0("mean", first, remaining)
 }
 colnames(dt2) <- c(colnames(dt2)[1:2], sapply(varNames, renameMeanUpper))
-# write the csv
-fwrite(dt2, file = "tidy_summary_UCI_HAR_Dataset.csv")
+# write the csv (write.table for submission requirements)
+# fwrite(dt2, file = "tidy_summary_UCI_HAR_Dataset.csv")
+write.table(dt2, file = "tidy_summary_UCI_HAR_Dataset.txt", row.names = F)
