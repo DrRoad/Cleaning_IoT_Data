@@ -65,7 +65,7 @@ The output of this script is `./data/tidy_UCI_HAR_Dataset_v2.csv`. For space sav
 This also produces a summarizing dataset, `./data/tidy_summary_UCI_HAR_Dataset_v2.csv`, as with the other script. The naming convention is the same.
 
 
-# Instructions from [course](https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-data-course-project))
+# Instructions from [course](https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-data-course-project)
 
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set.
 

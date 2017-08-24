@@ -1,6 +1,6 @@
 #### Note to Coursera graders:
 
-Codebook formatting is a nebulous area and is not well covered in the Getting and Cleaning Data class from which this project stems. The GitHub repo for the course, [http://datasciencespecialization.github.io/getclean/]((http://datasciencespecialization.github.io/getclean/)), contains a link to an [example codebook](https://gist.github.com/kirstenfrank/218c36a1938055d0f4e4). Though I would prefer a cleaner document personally, I believe that this is the "safe" bottom line as far as grading requirements go since it is linked in the official repo. As such, I am using that document as the baseline for grading, and encourage you do the same.
+Codebook formatting is a nebulous area and is not well covered in the Getting and Cleaning Data class from which this project stems. The GitHub repo for the course, [http://datasciencespecialization.github.io/getclean/]((http://datasciencespecialization.github.io/getclean/)), contains a link to an [example codebook](https://gist.github.com/kirstenfrank/218c36a1938055d0f4e4). Though I would prefer a cleaner document personally, I believe that this is the "safe" bottom line as far as grading requirements go, since it is linked in the official repo. As such, I am using that document as the baseline for grading, and encourage you do the same.
 
 # Codebook
 
@@ -122,4 +122,4 @@ File name: `tidy_summary_UCI_HAR_Dataset.csv`
 
 The second dataset is simply an aggregation of the first, with means of all features, grouped by the combination of subject and activity. That is, these are the means of every mean and standard deviation value of every feature for every subject performing a specific activity. it may be easier to imagine this given the dimensionality of the dataset: `180 x 68`. There are `30 subjects * 6 activities` rows (`180`), `66` feature columns, and `2` columns for identifying the subject and the activity, respectively.
 
-The naming convention simply adds `mean` in front of the variable names and maintains lowerCamelCase.
+The naming convention simply adds `mean` in front of the variable names and maintains `lowerCamelCase`.
